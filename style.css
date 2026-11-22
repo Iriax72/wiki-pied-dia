@@ -69,8 +69,12 @@ body {
     gap: 20px;
 }
 
-#results article {
+#results a {
     padding: 7px;
     background-color: var(--medium-grey);
     color: var(--white);
+}
+
+#results a .searchmatch {
+    font-weight: 800;
 }

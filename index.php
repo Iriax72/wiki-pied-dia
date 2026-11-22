@@ -52,10 +52,11 @@ if (isset($_POST['research'])) {
     <?php if (isset($results)): ?>
         <div id="results">
         <?php foreach ($results as $result): ?>
-            <article>
-                <h2><?= htmlspecialchars($result['title'], ENT_QUOTES, 'UTF-8') ?></h2>
+            <?php $title = $result['title']; ?>
+            <a href="https://<?= $lang ?>.wikipedia.org/wiki/<?= urldecode($title) ?>">
+                <h2><?= htmlspecialchars($title, ENT_QUOTES, 'UTF-8') ?></h2>
                 <p><?= strip_tags($result['snippet'], '<b>') ?></p>
-            </article>
+            </a>
         <?php endforeach; ?>
         </div>
     <?php endif; ?>
