@@ -73,6 +73,7 @@ body {
     padding: 7px;
     background-color: var(--medium-grey);
     color: var(--white);
+    text-decoration: none;
 }
 
 #results a .searchmatch {
