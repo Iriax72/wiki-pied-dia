@@ -60,11 +60,10 @@ h1 {
 #settings-div {
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 120px;
     background-color: var(--light-grey);
     color: var(--black);
     justify-content: space-around;
-    width: 80px
 }
 
 /* Research */
@@ -85,6 +84,7 @@ h1 {
 
 #research input {
     width: var(--input-width);
+    margin: 8px;
 }
 
 /* Results */
