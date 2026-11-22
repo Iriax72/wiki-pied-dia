@@ -41,7 +41,7 @@ if (isset($_POST['research'])) {
         </form>
     </div>
     <div id="research" class="container">
-        <div id="page-title">
+        <div class="page-title">
             <h1>Wiki-pied-dia</h1>
             <img src="./assets/pied.png" alt="logo (pied)">
         </div>
