@@ -58,9 +58,10 @@ h1 {
 }
 
 #settings-div {
+    padding: 8px;
     position: absolute;
     left: 0;
-    top: 120px;
+    top: 140px;
     background-color: var(--light-grey);
     color: var(--black);
     justify-content: space-around;
@@ -72,6 +73,7 @@ h1 {
     width: 100vw;
     background-color: var(--medium-grey);
     color: var(--white);
+    padding: 10px;
 }
 
 .page-title h1 {
