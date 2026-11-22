@@ -1,4 +1,5 @@
 <?php
+$css_activated = $_POST['active-css'] ?? true;
 if (isset($_POST['research'])) {
     require_once __DIR__ . '/API.php';
 
@@ -16,14 +17,30 @@ if (isset($_POST['research'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki-pied-dia</title>
-    <link rel="stylesheet" href="./style.css">
+    <?php if ($css_activated): ?>
+        <link rel="stylesheet" href="./style.css">
+    <?php endif ?>
 </head>
 <body>
+    <button id="settings-btn">⚙️</button>
+    <div id="settings-div">
+        <form method="POST">
+            <div>
+                <input type="checkbox" name="active-css" <?php if ($css_activated) {echo 'checked';}?>>
+                <label for="active-css">Activer le CSS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="test">
+                <label for="test">Cette checkbox ne sert à rien</label>
+            </div>
+            <button type="submit" class="submit-btn">enregistrer</button>
+        </form>
+    </div>
     <div id="research">
         <h1>Wiki-pied-dia</h1>
         <form method="POST">
             <input type="text" name="research">
-            <button type="submit">rechercher</button>
+            <button type="submit" class="submit-btn">rechercher</button>
         </form>
     </div>
     <?php if (isset($results)): ?>
