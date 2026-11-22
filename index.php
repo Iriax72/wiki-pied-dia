@@ -20,10 +20,11 @@ if (isset($_POST['research'])) {
     <?php if ($css_activated): ?>
         <link rel="stylesheet" href="./style.css">
     <?php endif ?>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <button id="settings-btn">⚙️</button>
-    <div id="settings-div">
+    <div id="settings-div" class="hidden">
         <form method="POST">
             <div>
                 <input type="checkbox" name="active-css" <?php if ($css_activated) {echo 'checked';}?>>

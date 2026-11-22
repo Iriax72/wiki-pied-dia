@@ -8,6 +8,10 @@ body {
     align-items: center;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .submit-btn {
     width: 30px;
     border-radius: 8px;
