@@ -49,7 +49,7 @@ if (isset($_POST['research'])) {
             <?php if ($css_activated): ?>
                 <input type="hidden" name="active-css" value="1">
             <?php endif ?>
-            <input type="text" name="research" id="research-input">
+            <input type="text" name="research" id="research-input" value="<?= $research ?? '' ?>">
             <button type="submit" class="submit-btn" id="research-btn">rechercher</button>
         </form>
     </div>
