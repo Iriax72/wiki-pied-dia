@@ -22,6 +22,7 @@ if (isset($_POST['research'])) {
     <?php if ($css_activated): ?>
         <link rel="stylesheet" href="./style.css">
     <?php endif ?>
+    <link rel="shortcut icon" href="./assets/pied.png" type="image/png">
     <script src="./script.js" defer></script>
 </head>
 <body>
