@@ -27,7 +27,7 @@ if (isset($_POST['research'])) {
 </head>
 <body>
     <button id="settings-btn">⚙️</button>
-    <div id="settings-div" class="hidden">
+    <div id="settings-div" class="hidden container">
         <form method="POST">
             <div>
                 <input type="checkbox" id="active-css" name="active-css" <?php if ($css_activated) {echo 'checked';}?>>
@@ -40,9 +40,12 @@ if (isset($_POST['research'])) {
             <button type="submit" class="submit-btn">enregistrer</button>
         </form>
     </div>
-    <div id="research">
-        <h1>Wiki-pied-dia</h1>
-        <form method="POST">
+    <div id="research" class="container">
+        <div id="page-title">
+            <h1>Wiki-pied-dia</h1>
+            <img src="./assets/pied.png" alt="logo (pied)">
+        </div>
+        <form method="POST" class="container">
             <?php if ($css_activated): ?>
                 <input type="hidden" name="active-css" value="1">
             <?php endif ?>
@@ -51,7 +54,7 @@ if (isset($_POST['research'])) {
         </form>
     </div>
     <?php if (isset($results)): ?>
-        <div id="results">
+        <div id="results" class="container">
         <?php foreach ($results as $result): ?>
             <?php $title = $result['title']; ?>
             <a href="https://<?= $lang ?>.wikipedia.org/wiki/<?= urldecode($title) ?>">
