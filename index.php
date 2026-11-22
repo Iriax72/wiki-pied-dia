@@ -34,7 +34,7 @@ if (isset($_POST['research'])) {
                 <label for="active-css">Activer le CSS</label>
             </div>
             <div>
-                <input type="checkbox" name="test">
+                <input type="checkbox" name="test" id="test">
                 <label for="test">Cette checkbox ne sert à rien</label>
             </div>
             <button type="submit" class="submit-btn">enregistrer</button>
@@ -49,8 +49,8 @@ if (isset($_POST['research'])) {
             <?php if ($css_activated): ?>
                 <input type="hidden" name="active-css" value="1">
             <?php endif ?>
-            <input type="text" name="research">
-            <button type="submit" class="submit-btn">rechercher</button>
+            <input type="text" name="research" id="research-input">
+            <button type="submit" class="submit-btn" id="research-btn">rechercher</button>
         </form>
     </div>
     <?php if (isset($results)): ?>
