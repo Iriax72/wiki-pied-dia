@@ -1,0 +1,31 @@
+body {
+    background-color: lemonchiffon;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#research {
+    background-color: blueviolet;
+}
+
+button {
+    width: 30vw;
+    border-radius: 8px;
+}
+
+#results {
+    background-color: aquamarine;
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#results article {
+    background-color: tomato;
+}
